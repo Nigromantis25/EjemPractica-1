@@ -1,0 +1,53 @@
+:root{
+    --bg: #84818a;
+    --card: #c5b6b6;
+    --primary: #17181a;
+    --muted: #6b6f76;
+    --accent: #8A6694;
+    --text: #0b0c0b;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html,body{height:100%}
+
+body{
+    font-family: Ubuntu, "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+}
+
+.container{max-width:900px;margin:2rem auto;padding:0 1rem}
+
+header{
+    display:flex;align-items:center;justify-content:space-between;
+    background:linear-gradient(90deg,#b6bd52,#54668b);
+    padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(15,15,15,0.06)
+}
+
+header h1{font-size:1.25rem;color:var(--primary);font-weight:700}
+
+header img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,0.08)}
+
+main{margin-top:1.25rem;background:var(--card);padding:1.25rem;border-radius:10px;box-shadow:0 4px 12px rgba(15,15,15,0.04)}
+
+h2{font-size:1.5rem;color:#212529;margin-bottom:0.75rem;border-bottom:1px solid #e6e9ef;padding-bottom:0.5rem}
+
+ul{list-style:none;padding-left:0;margin-top:0.75rem;display:grid;gap:0.5rem}
+
+li{background:#fff;border:1px solid #eef1f6;padding:0.75rem;border-radius:8px;display:flex;justify-content:space-between;align-items:center}
+
+li a{color:var(--primary);text-decoration:none;font-weight:600}
+li a:hover{text-decoration:underline;opacity:0.95}
+
+footer{margin-top:1rem;text-align:center;color:var(--muted);font-size:0.9rem}
+footer a{color:var(--primary);text-decoration:none;margin-left:0.25rem}
+
+@media (max-width:600px){
+    header{flex-direction:column;gap:0.75rem}
+    header h1{text-align:center}
+}
+
