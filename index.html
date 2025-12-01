@@ -11,24 +11,91 @@
 </head>
 <body>
   <header>
-    <h1>Estudiante: Lobaton Fernandez Ithan Reyner</h1>
-    <img src="C:\Users\ithan\Downloads\holasdd.png" alt="Foto de perfil de Lobaton Fernandez Ithan Reyner">
+    <div class="header-content">
+      <h1>Estudiante: Lobaton Fernandez Ithan Reyner</h1>
+      <div class="profile-section">
+        <img id="profileImage" src="https://media.craiyon.com/2025-04-12/sPkazQnfQCC1jBdLo_1yEA.webp" alt="Foto de perfil de Lobaton Fernandez Ithan Reyner">
+        <button id="uploadProfileBtn" class="btn-profile" title="Cambiar foto de perfil">📷</button>
+        <input type="file" id="profileInput" accept="image/*" style="display:none;">
+      </div>
+    </div>
   </header>
   <main>
     <h2>Diseño Web - Assignment Portal</h2>
-    <ul>
-      <li> Practica 1:<a href="https://nigromantis25.github.io/EjemPractica-1/">https://nigromantis25.github.io/EjemPractica-1/</a></li> 
-      <li>Practica 2:<a href="#">P2</a></li>
-      
+    <div class="controls">
+      <button id="addPracticeBtn" class="btn-add">➕ Agregar Práctica</button>
+    </div>
+    <ul id="practicesList">
+      <li class="practice-item" data-practice="1">
+        <div class="practice-info">
+          <strong>Practica 1:</strong> <a href="https://nigromantis25.github.io/EjemPractica-1/" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="practice-actions">
+          <button class="btn-upload-pdf" onclick="document.getElementById('pdf1').click()" title="Subir PDF">📄</button>
+          <input type="file" id="pdf1" accept=".pdf" style="display:none;" onchange="handlePdfUpload(1, this)">
+          <a id="pdf1-link" href="practica1.pdf" download class="btn-download" style="display:none;">📥</a>
+        </div>
+      </li>
+      <li class="practice-item" data-practice="2">
+        <div class="practice-info">
+          <strong>Practica 2:</strong> <a href="#" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="practice-actions">
+          <button class="btn-upload-pdf" onclick="document.getElementById('pdf2').click()" title="Subir PDF">📄</button>
+          <input type="file" id="pdf2" accept=".pdf" style="display:none;" onchange="handlePdfUpload(2, this)">
+          <a id="pdf2-link" href="practica2.pdf" download class="btn-download" style="display:none;">📥</a>
+        </div>
+      </li>
+      <li class="practice-item" data-practice="3">
+        <div class="practice-info">
+          <strong>Practica 3:</strong> <a href="#" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="practice-actions">
+          <button class="btn-upload-pdf" onclick="document.getElementById('pdf3').click()" title="Subir PDF">📄</button>
+          <input type="file" id="pdf3" accept=".pdf" style="display:none;" onchange="handlePdfUpload(3, this)">
+          <a id="pdf3-link" href="practica3.pdf" download class="btn-download" style="display:none;">📥</a>
+        </div>
+      </li>
+      <li class="practice-item" data-practice="4">
+        <div class="practice-info">
+          <strong>Practica 4:</strong> <a href="#" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="practice-actions">
+          <button class="btn-upload-pdf" onclick="document.getElementById('pdf4').click()" title="Subir PDF">📄</button>
+          <input type="file" id="pdf4" accept=".pdf" style="display:none;" onchange="handlePdfUpload(4, this)">
+          <a id="pdf4-link" href="practica4.pdf" download class="btn-download" style="display:none;">📥</a>
+        </div>
+      </li>
+      <li class="practice-item" data-practice="5">
+        <div class="practice-info">
+          <strong>Practica 5:</strong> <a href="#" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="practice-actions">
+          <button class="btn-upload-pdf" onclick="document.getElementById('pdf5').click()" title="Subir PDF">📄</button>
+          <input type="file" id="pdf5" accept=".pdf" style="display:none;" onchange="handlePdfUpload(5, this)">
+          <a id="pdf5-link" href="practica5.pdf" download class="btn-download" style="display:none;">📥</a>
+        </div>
+      </li>
+      <li class="practice-item" data-practice="6">
+        <div class="practice-info">
+          <strong>Practica 6:</strong> <a href="#" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="practice-actions">
+          <button class="btn-upload-pdf" onclick="document.getElementById('pdf6').click()" title="Subir PDF">📄</button>
+          <input type="file" id="pdf6" accept=".pdf" style="display:none;" onchange="handlePdfUpload(6, this)">
+          <a id="pdf6-link" href="practica6.pdf" download class="btn-download" style="display:none;">📥</a>
+        </div>
+      </li>
     </ul>
-    
   </main> 
  
   <footer>
     <p>
-      &copy; 2023 - Location: Bolivia - Estudiante: Lobaton Fernandez Ithan Reyner
+      &copy; 2025 - Location: Bolivia - Estudiante: Lobaton Fernandez Ithan Reyner
       <a href="http://www.upds.edu.bo/"> UPDS - Cbba.</a>
     </p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
